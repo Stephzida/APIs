@@ -1,7 +1,7 @@
 //Delete request
 let studentId = "";
 let deleteForm = document.getElementById("deleteStudent")
-let url = "https://class-work-s65y.onrender.com/api/v1/student"
+let delurl = "https://class-work-s65y.onrender.com/api/v1/student"
 
 deleteForm.addEventListener("submit", async function(event){
     event.preventDefault();
@@ -14,7 +14,7 @@ deleteForm.addEventListener("submit", async function(event){
     };
 
     try {
-        let response = await fetch(`${url}/${studentId}` , {
+        let response = await fetch(`${delurl}/${studentId}` , {
             method : "DELETE"
         })
         if(response.ok === true){
