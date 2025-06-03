@@ -3,8 +3,8 @@ let studentId = "";
 let deleteForm = document.getElementById("deleteStudent")
 let delurl = "https://class-work-s65y.onrender.com/api/v1/student"
 
-deleteForm.addEventListener("submit", async function(event){
-    event.preventDefault();
+deleteForm.addEventListener("submit", async function(e){
+    e.preventDefault();
     
     studentId = document.getElementById("student_id").value;
 
